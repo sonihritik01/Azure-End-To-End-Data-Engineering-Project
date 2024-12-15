@@ -1,0 +1,32 @@
+{
+	"name": "Dataset_Git_Json_lookup",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ProLinkedServiceGen2",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "git.json",
+				"fileSystem": "parameters"
+			}
+		},
+		"schema": {
+			"type": "object",
+			"properties": {
+				"para_rel_url": {
+					"type": "string"
+				},
+				"para_sink_folder": {
+					"type": "string"
+				},
+				"para_sink_filename": {
+					"type": "string"
+				}
+			}
+		}
+	}
+}
